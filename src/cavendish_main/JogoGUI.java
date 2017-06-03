@@ -66,6 +66,9 @@ public class JogoGUI extends javax.swing.JFrame {
         jescolhaLugarFUNDO1.setVisible(false);
         jescolhaLugarFUNDO2.setVisible(false);
         jescolhaLugarFUNDO3.setVisible(false);
+        jescolhaLugarFUNDO4.setVisible(false);
+        jescolhaLugarFUNDO5.setVisible(false);
+        jescolhaLugarFUNDO6.setVisible(false);
         jMAPA.setVisible(false);
         jcaixaAZUL.setVisible(false);
         jtextoScrollAZUL.setVisible(false);
@@ -77,12 +80,10 @@ public class JogoGUI extends javax.swing.JFrame {
         jtextoLUGAR1.setVisible(false);
         jtextoLUGAR2.setVisible(false);
         jtextoLUGAR3.setVisible(false);
-        jescolhaLugarFUNDO1.setVisible(false);
-        jescolhaLugarFUNDO2.setVisible(false);
-        jescolhaLugarFUNDO3.setVisible(false);
         jcaixaAZUL.setVisible(false);
         jtextoScrollAZUL.setVisible(false);
         jcaixaGrandeAZUL2.setVisible(false);
+        
         
         // ♥ para o usuário não poder editar o texto
         jtextoPERGAMINHO.setEditable(false);
@@ -124,8 +125,6 @@ public class JogoGUI extends javax.swing.JFrame {
         jPISTAS = new javax.swing.JLabel();
         jSAIBAMAIS = new javax.swing.JLabel();
         jMAPA = new javax.swing.JLabel();
-        jtextoScrollPERGAMINHO = new javax.swing.JScrollPane();
-        jtextoPERGAMINHO = new javax.swing.JTextArea();
         jtextoScrollAZUL = new javax.swing.JScrollPane();
         jtextoAZUL = new javax.swing.JTextArea();
         jtextoLUGAR1 = new javax.swing.JLabel();
@@ -133,8 +132,13 @@ public class JogoGUI extends javax.swing.JFrame {
         jtextoLUGAR3 = new javax.swing.JLabel();
         jcaixaAZUL = new javax.swing.JLabel();
         jescolhaLugarFUNDO2 = new javax.swing.JLabel();
+        jescolhaLugarFUNDO6 = new javax.swing.JLabel();
         jescolhaLugarFUNDO3 = new javax.swing.JLabel();
+        jescolhaLugarFUNDO5 = new javax.swing.JLabel();
         jescolhaLugarFUNDO1 = new javax.swing.JLabel();
+        jescolhaLugarFUNDO4 = new javax.swing.JLabel();
+        jtextoScrollPERGAMINHO = new javax.swing.JScrollPane();
+        jtextoPERGAMINHO = new javax.swing.JTextArea();
         jCONTINUAR = new javax.swing.JLabel();
         jTESTEMUNHA = new javax.swing.JLabel();
         jFUNDO = new javax.swing.JLabel();
@@ -198,15 +202,6 @@ public class JogoGUI extends javax.swing.JFrame {
         getContentPane().add(jMAPA);
         jMAPA.setBounds(340, 0, 120, 50);
 
-        jtextoPERGAMINHO.setBackground(new java.awt.Color(213, 173, 104));
-        jtextoPERGAMINHO.setColumns(20);
-        jtextoPERGAMINHO.setFont(new java.awt.Font("Courier New", 1, 14)); // NOI18N
-        jtextoPERGAMINHO.setRows(5);
-        jtextoScrollPERGAMINHO.setViewportView(jtextoPERGAMINHO);
-
-        getContentPane().add(jtextoScrollPERGAMINHO);
-        jtextoScrollPERGAMINHO.setBounds(110, 130, 570, 340);
-
         jtextoAZUL.setColumns(20);
         jtextoAZUL.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 0, 20)); // NOI18N
         jtextoAZUL.setRows(5);
@@ -215,19 +210,19 @@ public class JogoGUI extends javax.swing.JFrame {
         getContentPane().add(jtextoScrollAZUL);
         jtextoScrollAZUL.setBounds(70, 430, 640, 150);
 
-        jtextoLUGAR1.setFont(new java.awt.Font("Courier New", 1, 30)); // NOI18N
+        jtextoLUGAR1.setFont(new java.awt.Font("Courier New", 1, 24)); // NOI18N
         jtextoLUGAR1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jtextoLUGAR1.setText("PICO DO CORCOVADO");
         getContentPane().add(jtextoLUGAR1);
         jtextoLUGAR1.setBounds(200, 80, 400, 50);
 
-        jtextoLUGAR2.setFont(new java.awt.Font("Courier New", 1, 30)); // NOI18N
+        jtextoLUGAR2.setFont(new java.awt.Font("Courier New", 1, 24)); // NOI18N
         jtextoLUGAR2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jtextoLUGAR2.setText("ILHA DAS COUVES");
         getContentPane().add(jtextoLUGAR2);
         jtextoLUGAR2.setBounds(200, 180, 400, 40);
 
-        jtextoLUGAR3.setFont(new java.awt.Font("Courier New", 1, 30)); // NOI18N
+        jtextoLUGAR3.setFont(new java.awt.Font("Courier New", 1, 24)); // NOI18N
         jtextoLUGAR3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jtextoLUGAR3.setText("PROJETO TAMAR");
         getContentPane().add(jtextoLUGAR3);
@@ -247,6 +242,16 @@ public class JogoGUI extends javax.swing.JFrame {
         getContentPane().add(jescolhaLugarFUNDO2);
         jescolhaLugarFUNDO2.setBounds(0, 160, 800, 80);
 
+        jescolhaLugarFUNDO6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jescolhaLugarFUNDO6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cavendish_main/botoes/cTEXTO2.png"))); // NOI18N
+        jescolhaLugarFUNDO6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jescolhaLugarFUNDO6MouseClicked(evt);
+            }
+        });
+        getContentPane().add(jescolhaLugarFUNDO6);
+        jescolhaLugarFUNDO6.setBounds(0, 160, 800, 80);
+
         jescolhaLugarFUNDO3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jescolhaLugarFUNDO3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cavendish_main/botoes/cTEXTO2.png"))); // NOI18N
         jescolhaLugarFUNDO3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -257,6 +262,16 @@ public class JogoGUI extends javax.swing.JFrame {
         getContentPane().add(jescolhaLugarFUNDO3);
         jescolhaLugarFUNDO3.setBounds(0, 250, 800, 80);
 
+        jescolhaLugarFUNDO5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jescolhaLugarFUNDO5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cavendish_main/botoes/cTEXTO2.png"))); // NOI18N
+        jescolhaLugarFUNDO5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jescolhaLugarFUNDO5MouseClicked(evt);
+            }
+        });
+        getContentPane().add(jescolhaLugarFUNDO5);
+        jescolhaLugarFUNDO5.setBounds(0, 250, 800, 80);
+
         jescolhaLugarFUNDO1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jescolhaLugarFUNDO1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cavendish_main/botoes/cTEXTO2.png"))); // NOI18N
         jescolhaLugarFUNDO1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -266,6 +281,25 @@ public class JogoGUI extends javax.swing.JFrame {
         });
         getContentPane().add(jescolhaLugarFUNDO1);
         jescolhaLugarFUNDO1.setBounds(0, 60, 800, 90);
+
+        jescolhaLugarFUNDO4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jescolhaLugarFUNDO4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cavendish_main/botoes/cTEXTO2.png"))); // NOI18N
+        jescolhaLugarFUNDO4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jescolhaLugarFUNDO4MouseClicked(evt);
+            }
+        });
+        getContentPane().add(jescolhaLugarFUNDO4);
+        jescolhaLugarFUNDO4.setBounds(0, 60, 800, 90);
+
+        jtextoPERGAMINHO.setBackground(new java.awt.Color(213, 173, 104));
+        jtextoPERGAMINHO.setColumns(20);
+        jtextoPERGAMINHO.setFont(new java.awt.Font("Courier New", 1, 14)); // NOI18N
+        jtextoPERGAMINHO.setRows(5);
+        jtextoScrollPERGAMINHO.setViewportView(jtextoPERGAMINHO);
+
+        getContentPane().add(jtextoScrollPERGAMINHO);
+        jtextoScrollPERGAMINHO.setBounds(110, 130, 570, 340);
 
         jCONTINUAR.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jCONTINUAR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cavendish_main/botoes/bCONTINUAR.png"))); // NOI18N
@@ -311,6 +345,7 @@ public class JogoGUI extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jTITULOActionPerformed
 
+    // ♥ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ opção LOCAIS
     // ♥ se lugar 1 for selecionado
     private void jescolhaLugarFUNDO1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jescolhaLugarFUNDO1MouseClicked
         selecionado = 1;
@@ -319,9 +354,11 @@ public class JogoGUI extends javax.swing.JFrame {
         jtextoAZUL.setText(tempCidade.local1.descricao);
         investigarOFF();
         bInvestigarON(); 
+        bMapaOpcoesOFF();
         
     }//GEN-LAST:event_jescolhaLugarFUNDO1MouseClicked
 
+    // ♥ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ opção LOCAIS
     // ♥ se lugar 2 for selecionado
     private void jescolhaLugarFUNDO2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jescolhaLugarFUNDO2MouseClicked
         selecionado = 2;
@@ -330,11 +367,12 @@ public class JogoGUI extends javax.swing.JFrame {
         jtextoAZUL.setText(tempCidade.local2.descricao);
         investigarOFF();
         bInvestigarON(); 
-        
+        bMapaOpcoesOFF();
 
         
     }//GEN-LAST:event_jescolhaLugarFUNDO2MouseClicked
 
+    // ♥ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ LOCAIS
     // ♥ clicar botão LOCAIS
     private void jLOCAISMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLOCAISMouseClicked
         
@@ -342,11 +380,13 @@ public class JogoGUI extends javax.swing.JFrame {
         //myInitComponents(); //Aru - RECARREGA COMPONENTES DA TELA INICIAL
 
         jTESTEMUNHA.setVisible(false);
-        
+        bMapaON();
+        bMapaOpcoesOFF();        
  
         
     }//GEN-LAST:event_jLOCAISMouseClicked
 
+    // ♥ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ INVESTIGAR
     // ♥ clicar botão INVESTIGAR
     private void jINVESTIGARMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jINVESTIGARMouseClicked
       
@@ -356,14 +396,21 @@ public class JogoGUI extends javax.swing.JFrame {
             jTITULO.setText(tempCidade.local1.testemunhaNome);
             //if para se for final da fase pegar pista correta
             jtextoAZUL.setText(tempCidade.prox.getPista());
-            
-            
-            
+                              
         break;
+        
         case 2:
+            imagem.trocar(tempCidade.local2.testemunha, jTESTEMUNHA);
+            jTITULO.setText(tempCidade.local2.testemunhaNome);
+            //if para se for final da fase pegar pista correta
+            jtextoAZUL.setText(tempCidade.prox.getPista());
             
         break;
         case 3:
+            imagem.trocar(tempCidade.local3.testemunha, jTESTEMUNHA);
+            jTITULO.setText(tempCidade.local3.testemunhaNome);
+            //if para se for final da fase pegar pista correta
+            jtextoAZUL.setText(tempCidade.prox.getPista());
             
         break;
     }
@@ -371,6 +418,7 @@ public class JogoGUI extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jINVESTIGARMouseClicked
 
+    // ♥ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ PISTAS
     // ♥ clicar botão PISTAS
     private void jPISTASMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPISTASMouseClicked
         
@@ -378,6 +426,7 @@ public class JogoGUI extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jPISTASMouseClicked
 
+    // ♥ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ opção LOCAIS
     // ♥ se lugar 3 for selecionado
     private void jescolhaLugarFUNDO3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jescolhaLugarFUNDO3MouseClicked
         selecionado = 3;
@@ -386,35 +435,42 @@ public class JogoGUI extends javax.swing.JFrame {
         jtextoAZUL.setText(tempCidade.local3.descricao);
         investigarOFF();
         bInvestigarON(); 
+        bMapaOpcoesOFF();
         
     }//GEN-LAST:event_jescolhaLugarFUNDO3MouseClicked
 
-    
+    // ♥ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MAPA
     // ♥ botão MAPA
     private void jMAPAMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMAPAMouseClicked
         
         imagem.trocar("fundos/mapa.png", jFUNDO);
-        jtextoLUGAR1.setVisible(false);
-        jtextoLUGAR2.setVisible(false);
-        jtextoLUGAR3.setVisible(false);
-        jescolhaLugarFUNDO1.setVisible(false);
-        jescolhaLugarFUNDO2.setVisible(false);
-        jescolhaLugarFUNDO3.setVisible(false);
+        jtextoLUGAR1.setText(tempCidade.nomeCidade);
+        jtextoLUGAR2.setText(tempCidade.prox.nomeCidade);
+        jtextoLUGAR3.setText(tempCidade.prox.prox.nomeCidade);
+        jescolhaLugarFUNDO4.setVisible(true); jescolhaLugarFUNDO4.setEnabled(true);
+        jescolhaLugarFUNDO5.setVisible(true); jescolhaLugarFUNDO5.setEnabled(true);
+        jescolhaLugarFUNDO6.setVisible(true); jescolhaLugarFUNDO6.setEnabled(true);
+        bLocaisOpcoesOFF();
+        
         
        
     }//GEN-LAST:event_jMAPAMouseClicked
 
+    // ♥ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CONTINUAR PERGAMINHO
     // ♥ botão CONTINUAR do pergaminho
     private void jCONTINUARMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jCONTINUARMouseClicked
         
         // ♥ quando apertado 1ª vez -- trocar texto do pergaminho pela explicação da fase
-        // ♥ quando apertado 2ª vez -- começar fase
-        //CIAÇÃO DE OBJETO TEMPORÁRIO QUE RECEBE CIDADE ATUAL
+
+        //CRIAÇÃO DE OBJETO TEMPORÁRIO QUE RECEBE CIDADE ATUAL
             tempCidade = fase.listaFases[0].vetCidades[0];
             tempCidade.prox = fase.listaFases[0].vetCidades[1];
             tempCidade.prox.ant = fase.listaFases[0].vetCidades[0];
             tempCidade.prox.prox = fase.listaFases[0].vetCidades[2];
             tempCidade.prox.prox.ant = fase.listaFases[0].vetCidades[2];
+        System.out.println("Temp cidade: " + tempCidade.nomeCidade);
+        System.out.println("tempCidade.prox: " + tempCidade.prox.nomeCidade);
+        System.out.println("tempCidade.prox.prox: " + tempCidade.prox.prox.nomeCidade);
 
         if( botaoApertadoPERGAMINHO == 1 ){
             
@@ -422,30 +478,54 @@ public class JogoGUI extends javax.swing.JFrame {
             botaoApertadoPERGAMINHO++;
             
         }else
+        // ♥ quando apertado 2ª vez -- começar fase
         if( botaoApertadoPERGAMINHO == 2 ) {
-           
-          
-            
+                    
             pergaminhoOFF();
-
-            
 
             imagem.trocar(tempCidade.fundo, jFUNDO);
             jTITULO.setText(tempCidade.nomeCidade);
             jtextoScrollAZUL.setVisible(true);
             jtextoAZUL.setText(tempCidade.cidadeDescricao);
             bLocalON();
+            bPistasON();
+            bInvestigarON ();
             jSAIBAMAIS.setVisible(true);
-            bMapaON();
             
-
             
         }
         
     }//GEN-LAST:event_jCONTINUARMouseClicked
+
+    // ♥ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ opções MAPA
+    // ♥ uma das opções quando o botão MAPA é selecionado
+    private void jescolhaLugarFUNDO4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jescolhaLugarFUNDO4MouseClicked
+        
+            imagem.trocar(tempCidade.fundo, jFUNDO);
+            jTITULO.setText(tempCidade.nomeCidade);
+            jtextoScrollAZUL.setVisible(true);
+            jtextoAZUL.setText(tempCidade.cidadeDescricao);
+            jSAIBAMAIS.setVisible(true);   
+            bLocaisOpcoesOFF();
+        
+    }//GEN-LAST:event_jescolhaLugarFUNDO4MouseClicked
+    
+    // ♥ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ opções MAPA    
+    // ♥ uma das opções quando o botão MAPA é selecionado
+    private void jescolhaLugarFUNDO5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jescolhaLugarFUNDO5MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jescolhaLugarFUNDO5MouseClicked
+    
+    // ♥ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ opções MAPA
+    // ♥ uma das opções quando o botão MAPA é selecionado
+    private void jescolhaLugarFUNDO6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jescolhaLugarFUNDO6MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jescolhaLugarFUNDO6MouseClicked
    
+    
+        // ♥ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Métodos para habilitar e desabilitar botões
     private void bLocalON (){ //HABILITA E DISPONIBILIZA VISUALIZAÇÃO DO BOTAO LOCAL
-        jLOCAIS.setEnabled(true); jLOCAIS.setVisible(true); 
+        jLOCAIS.setEnabled(true); jLOCAIS.setVisible(true);  
     }    
     
     private void bLocalOFF (){ //HABILITA E DISPONIBILIZA VISUALIZAÇÃO DO BOTAO LOCAL
@@ -466,6 +546,18 @@ public class JogoGUI extends javax.swing.JFrame {
     
     private void bPistasOFF (){ //HABILITA E DISPONIBILIZA VISUALIZAÇÃO DO BOTAO LOCAL
         jPISTAS.setEnabled(false); jPISTAS.setVisible(false); 
+    }
+    
+    private void bLocaisOpcoesOFF(){
+        jescolhaLugarFUNDO1.setVisible(false); jescolhaLugarFUNDO1.setEnabled(false);
+        jescolhaLugarFUNDO2.setVisible(false); jescolhaLugarFUNDO2.setEnabled(false);
+        jescolhaLugarFUNDO3.setVisible(false); jescolhaLugarFUNDO3.setEnabled(false);
+    }
+    
+    private void bMapaOpcoesOFF(){
+        jescolhaLugarFUNDO4.setVisible(false); jescolhaLugarFUNDO4.setEnabled(false);
+        jescolhaLugarFUNDO5.setVisible(false); jescolhaLugarFUNDO5.setEnabled(false);
+        jescolhaLugarFUNDO6.setVisible(false); jescolhaLugarFUNDO6.setEnabled(false);
     }
     
     private void botoesOFF (){
@@ -520,9 +612,12 @@ public class JogoGUI extends javax.swing.JFrame {
         jtextoLUGAR2.setVisible(false);
         jtextoLUGAR3.setVisible(false);
 
-        jescolhaLugarFUNDO1.setVisible(false);
-        jescolhaLugarFUNDO2.setVisible(false);
-        jescolhaLugarFUNDO3.setVisible(false);
+        jescolhaLugarFUNDO1.setVisible(false); jescolhaLugarFUNDO1.setEnabled(false);
+        jescolhaLugarFUNDO2.setVisible(false); jescolhaLugarFUNDO2.setEnabled(false);
+        jescolhaLugarFUNDO3.setVisible(false); jescolhaLugarFUNDO3.setEnabled(false);
+        jescolhaLugarFUNDO4.setVisible(false); jescolhaLugarFUNDO4.setEnabled(false);
+        jescolhaLugarFUNDO5.setVisible(false); jescolhaLugarFUNDO5.setEnabled(false);
+        jescolhaLugarFUNDO6.setVisible(false); jescolhaLugarFUNDO6.setEnabled(false);
      
         //jCONVERSAR.setVisible(false);
         jSAIBAMAIS.setVisible(true);
@@ -579,6 +674,9 @@ public class JogoGUI extends javax.swing.JFrame {
     private javax.swing.JLabel jescolhaLugarFUNDO1;
     private javax.swing.JLabel jescolhaLugarFUNDO2;
     private javax.swing.JLabel jescolhaLugarFUNDO3;
+    private javax.swing.JLabel jescolhaLugarFUNDO4;
+    private javax.swing.JLabel jescolhaLugarFUNDO5;
+    private javax.swing.JLabel jescolhaLugarFUNDO6;
     private javax.swing.JTextArea jtextoAZUL;
     private javax.swing.JLabel jtextoLUGAR1;
     private javax.swing.JLabel jtextoLUGAR2;
